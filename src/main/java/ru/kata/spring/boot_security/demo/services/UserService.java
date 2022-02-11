@@ -9,6 +9,6 @@ public interface UserService extends UserDetailsService {
     List<User> findAll();
     User findByUsername(String username);
     User findById(long id);
-    void save(User user);
+    void save(User user, String[] roleNames);
     void delete(long id);
 }

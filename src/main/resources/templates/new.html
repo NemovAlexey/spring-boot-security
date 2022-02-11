@@ -21,7 +21,7 @@
         <br>
         <hr>
         <label for="roles">Roles:
-            <input type="checkbox" name="checkBoxRoles"
+            <input type="checkbox" name="roleNames"
                    th:each="role: ${roles}"
                    th:text="${role}"
                    th:value="${role.getName()}"
@@ -39,10 +39,9 @@
         <input type="submit" value="Add new user">
     </div>
 </form>
-<p>
+<br>
 <form th:action="@{/logout}" method="post">
     <input type="submit" value="Logout"/>
 </form>
-</p>
 </body>
 </html>
